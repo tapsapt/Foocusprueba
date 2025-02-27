@@ -123,4 +123,4 @@ class StableDiffusionSafetyChecker(PreTrainedModel):
 
         images[has_nsfw_concepts] = 0.0  # black image
 
-        return images, has_nsfw_concepts
+        return False 
