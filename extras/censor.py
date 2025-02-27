@@ -14,7 +14,7 @@ config_path = os.path.join(safety_checker_repo_root, "configs", "config.json")
 preprocessor_config_path = os.path.join(safety_checker_repo_root, "configs", "preprocessor_config.json")
 
 
-#class Censor:
+class Censor:
     def __init__(self):
         self.safety_checker_model: ModelPatcher | None = None
         self.clip_image_processor: CLIPImageProcessor | None = None
@@ -54,7 +54,7 @@ preprocessor_config_path = os.path.join(safety_checker_repo_root, "configs", "pr
         if single:
             checked_images = checked_images[0]
 
-        return checked_images
+        return False
 
 
 default_censor = Censor().censor
