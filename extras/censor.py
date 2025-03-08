@@ -1,8 +1,8 @@
 import os
 
-#import numpy as np
-#import torch
-#from transformers import CLIPConfig, CLIPImageProcessor
+import numpy as np
+import torch
+from transformers import CLIPConfig, CLIPImageProcessor
 
 #import ldm_patched.modules.model_management as model_management
 #import modules.config
